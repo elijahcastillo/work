@@ -1,0 +1,87 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(247, 247, 247);
+}
+
+.center .container {
+  min-width: 30%;
+  height: 65vh;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px rgb(207, 202, 202);
+  padding: 1rem;
+}
+
+.center .container .login_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.login_container h1 {
+  position: relative;
+  left: 8%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login_inp {
+  position: relative;
+  top: 1rem;
+}
+
+.inp {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.inp input {
+  width: 75%;
+  margin: 0 auto;
+  padding: 0.8rem;
+  border: none;
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(45deg, rgb(204, 202, 202), rgb(105, 105, 104));
+  border-image-slice: 1;
+}
+
+.inp input:focus {
+  outline: none;
+}
+
+.inp label {
+  position: relative;
+  color: rgb(106, 105, 103);
+  left: 12%;
+}
+
+.sub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+  gap: 2rem;
+}
+.sub button {
+  width: 75%;
+  margin: 0 auto;
+  padding: 0.8rem;
+  color: white;
+  border: none;
+  background-color: rgb(43, 89, 214);
+  cursor: pointer;
+}
+
+.reg {
+  text-decoration: none;
+  color: rgb(44, 44, 43);
+}
+
+@media (max-width: 400px) {
+  .center .container {
+    min-width: 30vh;
+    padding: 2.5rem;
+  }
+}
